@@ -1,0 +1,17 @@
+{
+  "ai-local-cases.csv": "4967a292268da8609930cc04673461ab477c433c47818b62fc6063502cb536c7",
+  "ai-local-dashboard-integrated.html": "34fa81f86a8af4a51483f46039ad5298350622af4aae7669c8896a0decaccaae",
+  "ai-local-dashboard-v1.1-import.json": "bcef5dbb55216c1bb617d855aae526dd6dbb83cf7b44da2fff1c2eec2cad6043",
+  "ai-local-database.json": "67fec0270ccb96680ffd475fbdf6330a004d10adfc7b19ad20ba203b859c4c9b",
+  "CHANGELOG.json": "ecddff5922a64ba1fe0ec7cf8c52f410f50cf85fc2cb018c3ce0ea8914fd0182",
+  "CHANGELOG.md": "fba13099535fe47a43cc3fac76286deb8eaf9ccefd76427dc5ef33d16a915125",
+  "database.schema.json": "ee3d2c82de27f94b83b0cae57e8be36c394e55e82bb405b0b34425923b9e2162",
+  "README.md": "0d6c7bc279696946a683d630b0617d65c7aad824a00be7177fb3e4bda8b4f65a",
+  "region-coverage.csv": "0a72988514697a4c637065c7ee9c771ba4df24f9b3b782fdd2a66265d61079bd",
+  "region-coverage.json": "d7cb72a02dfffcdc770d818150802a1a57387ea02607a6d917f9512246b4768a",
+  "REGION_COVERAGE.md": "eae0ac6a336dc279886f93506d8cd11759b89c341b874b343142bb0168f592c2",
+  "sources.csv": "f887a21d1eb40ac926930a7492a975f1410e8bf1c7be0c51e752602c17a0dd07",
+  "sources.json": "5af1b9e4d559a43e177a1627a17a92d74ce788464536e3817d23eeea4182d299",
+  "SOURCES.md": "f324aa09ef33c15f6b9db8b12aef8dd89694b31409934d4e32c10df328e9ecf1",
+  "VALIDATION.md": "53b1727ed429e693047d12162cc4745cff62f451c604f8ec9d51be6347d10a62"
+}

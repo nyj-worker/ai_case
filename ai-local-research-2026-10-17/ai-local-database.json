@@ -1,0 +1,1774 @@
+{
+  "schemaVersion": "2.0",
+  "datasetId": "kr-local-ai-seed-20261017-r2",
+  "checkedAt": "2026-10-17",
+  "timezone": "Asia/Seoul",
+  "scope": "요청된 17개 시도 분류와 일부 시군구·행정시의 초기 표본. 2차 조사에서 강원 시행 사례와 남양주시 사례를 보강. 전국 기초지자체 전수조사 아님.",
+  "statusPolicy": "status는 출처 당시 상태. currentStatus는 현재 지속운영을 재검증하지 못해 미확인. 게시일이 없는 서비스 안내는 확인일 기준 안내 존재만 확인.",
+  "cases": [
+    {
+      "id": "C001",
+      "region": "서울특별시",
+      "city": "광역",
+      "title": "AI 안부확인서비스",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "AI가 고립위험가구에 전화해 건강·식사 등 안부를 확인하고 내용을 동주민센터에 전달한다.",
+      "tech": "대화형 AI·음성",
+      "benefit": "안부 확인과 복지 담당자 연계",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.seoul.go.kr/news/news_report.do?nttNo=444909&tr_code=snews",
+      "sourceTitle": "서울시 AI 안부확인서비스 일방향에서 양방향으로 업그레이드",
+      "sourceIds": [
+        "S01"
+      ],
+      "publishedAt": "2025-10-20",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2025-10-20",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "기존 서비스는 2022년 10월부터 제공. 2025년 11월 양방향 전환 시범 계획은 운영 실적에 합산하지 않음.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S01",
+          "claim": "사업 및 기능",
+          "quote": "AI가 자동으로 전화를 걸어 안부",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C002",
+      "region": "부산광역시",
+      "city": "광역",
+      "title": "아동돌봄 보이스봇",
+      "category": "민원·시민서비스",
+      "status": "시범운영",
+      "summary": "전화로 아동돌봄 정보를 묻고 모바일 문자 안내를 받는 자동상담 서비스.",
+      "tech": "음성 AI",
+      "benefit": "야간·주말 돌봄정보 접근성 확대",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.busan.go.kr/nbnews/1745975",
+      "sourceTitle": "부산시 AI 기반 아동돌봄 보이스봇 시범운영 안내",
+      "sourceIds": [
+        "S22",
+        "S03"
+      ],
+      "publishedAt": "2026-08-03",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-08-03",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "기존 보도자료 접속은 실패했으나 같은 부서의 공식 통합 공지 원문으로 시범운영 개시·안내 범위·2026-11-30까지의 시범기간을 교차 확인. 현재 지속운영은 별도 미검증.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S22",
+          "claim": "시행 및 기능",
+          "quote": "시범운영을 시작했습니다.",
+          "locator": "통합 공지사항 본문",
+          "supportsPerformance": false
+        },
+        {
+          "sourceId": "S03",
+          "claim": "사업 및 기능",
+          "quote": "아동돌봄 보이스봇(자동상담시스템)",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      },
+      "revisionNote": "2차 공식자료 조사로 보완. 이전 상태: 색인 확인·재검증 필요 / 시범운영"
+    },
+    {
+      "id": "C003",
+      "region": "대구광역시",
+      "city": "광역",
+      "title": "120달구벌콜센터 AI상담",
+      "category": "민원·시민서비스",
+      "status": "시범운영",
+      "summary": "음성 질문을 텍스트로 바꿔 의도를 분석하고 지식DB에서 답변을 찾아 음성으로 안내한다.",
+      "tech": "음성인식·자연어처리",
+      "benefit": "단순 민원 자동응대와 상담원 연결",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.daegu.go.kr/120/customer/pressView.do;jsessionid=35A336C9E96424810C4979882CB47763?curPage=1&num=259&scText=&scType=",
+      "sourceTitle": "대구광역시 AI상담서비스 시범운영",
+      "sourceIds": [
+        "S02"
+      ],
+      "publishedAt": "2025-04-01",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2025-04-01",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "2025년 4~9월 시범 당시 상태. 종료 후 정식 운영 여부는 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S02",
+          "claim": "사업 및 기능",
+          "quote": "차량등록, 노후자동차, 여권 3개 분야",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C004",
+      "region": "인천광역시",
+      "city": "광역",
+      "title": "민원 챗봇 인천톡톡",
+      "category": "민원·시민서비스",
+      "status": "운영",
+      "summary": "카카오톡에서 교통·복지 등 생활 민원 질문에 텍스트와 관련 사이트 링크로 답한다.",
+      "tech": "인공지능 챗봇",
+      "benefit": "24시간 민원정보 제공",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.incheon.go.kr/IC010101/view?curPage=90&nttNo=2044396",
+      "sourceTitle": "인천광역시 알림톡 챗봇서비스 개시 안내",
+      "sourceIds": [
+        "S23",
+        "S04"
+      ],
+      "publishedAt": "2025-01-13",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2025-01-13",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "같은 날짜의 인천시 새소식 원문으로 정식 운영 및 FAQ 221종 안내를 확인. 221종은 정보 범위이며 실제 상담처리 실적 아님.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S23",
+          "claim": "시행 및 기능",
+          "quote": "2025년 1월 13일부터 정식으로 운영합니다.",
+          "locator": "새소식 본문",
+          "supportsPerformance": false
+        },
+        {
+          "sourceId": "S04",
+          "claim": "사업 및 기능",
+          "quote": "총 221종의 질문에 대한 답변",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      },
+      "revisionNote": "2차 공식자료 조사로 보완. 이전 상태: 색인 확인·재검증 필요 / 운영"
+    },
+    {
+      "id": "C005",
+      "region": "광주광역시",
+      "city": "광역",
+      "title": "광주다움 통합돌봄 AI 안부확인",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "통합돌봄 안전지원 항목으로 AI 보이스봇이 안부와 안전을 확인한다.",
+      "tech": "AI 보이스봇",
+      "benefit": "돌봄 대상자 안부·안전 확인",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.gwangju.go.kr/welfare/contentsView.do?pageId=welfare194",
+      "sourceTitle": "광주다움 통합돌봄 | 광주광역시 복지·건강",
+      "sourceIds": [
+        "S05"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-10-17",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "공식 서비스표에 평일 9~18시 무료 서비스로 안내. 별도 사업 시작일·이용성과는 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S05",
+          "claim": "사업 및 기능",
+          "quote": "AI 보이스봇 통화, 안부·안전 확인",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C006",
+      "region": "대전광역시",
+      "city": "광역",
+      "title": "시정홍보 채널 대전 AI PARK",
+      "category": "내부 행정자동화",
+      "status": "운영",
+      "summary": "시 보도자료와 정책소식을 AI가 분석해 짧은 홍보영상으로 제작하는 시정홍보 체계.",
+      "tech": "생성형 AI·콘텐츠 생성",
+      "benefit": "홍보자료 제작·전달 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=1632&ntatcSeq=1511134035&pageIndex=2",
+      "sourceTitle": "인공지능 기반 시정홍보 채널‘대전 AI PARK’ 출범 | 대전광역시청",
+      "sourceIds": [
+        "S06"
+      ],
+      "publishedAt": "2026-04-07",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-04-07",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "본문에 2026-04-06 운영 개시 명시. 제작시간 절감률·조회수 성과는 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S06",
+          "claim": "사업 및 기능",
+          "quote": "4 월 6 일부터 본격적인 운영",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C007",
+      "region": "울산광역시",
+      "city": "광역",
+      "title": "상수도사업본부 물동이챗봇",
+      "category": "민원·시민서비스",
+      "status": "운영",
+      "summary": "상수도 질문에 답하고 자료를 찾지 못할 때 홈페이지 검색과 의미 확장 및 생성형 답변을 제공한다.",
+      "tech": "의미검색·생성형 AI",
+      "benefit": "상수도 민원정보 탐색 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://water.ulsan.go.kr/chatbot/chatbot.do",
+      "sourceTitle": "물동이Chat",
+      "sourceIds": [
+        "S07",
+        "S33"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-10-17",
+      "currentStatus": "미확인",
+      "verification": "색인 확인·재검증 필요",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "공식 서비스 검색 색인 내용 확인. 원문 직접 접근은 시간 초과. 응답 기능은 실사용 시험하지 않음. 2026-03-24 공식 상수도 보도자료 색인으로 AI 챗봇 도입을 보강했으나 원문 접근은 계속 실패. 전체 상수도 예산을 챗봇 예산으로 기입하지 않음.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S07",
+          "claim": "사업 및 기능",
+          "quote": "AI 의미 확장 답변 기능 도입",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        },
+        {
+          "sourceId": "S33",
+          "claim": "물동이 AI 챗봇 도입에 대한 공식 보도 색인",
+          "quote": "인공지능(AI) 기반 ‘물동이’ 채팅로봇",
+          "locator": "시민 중심 디지털 전환 설명",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "색인 확인·재검증 필요",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C008",
+      "region": "세종특별자치시",
+      "city": "광역",
+      "title": "생성형 AI 민원안내 AI충녕",
+      "category": "민원·시민서비스",
+      "status": "미확인",
+      "summary": "세종시 관련 정보를 기반으로 행정·생활·교통·복지 등의 질문에 답하는 생성형 AI 안내 서비스.",
+      "tech": "생성형 AI",
+      "benefit": "생활·행정정보 안내",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://aichat.sejong.go.kr/",
+      "sourceTitle": "세종 AI충녕",
+      "sourceIds": [
+        "S08"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-10-17",
+      "currentStatus": "미확인",
+      "verification": "색인 확인·재검증 필요",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "공식 서비스의 검색 색인은 확인되나 원문은 JavaScript 안내만 반환. 정식/시범 구분을 입증할 공식 원문을 확보하지 못해 기존 운영 표기를 미확인으로 정정. 실제 응답·정확도 미시험.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S08",
+          "claim": "사업 및 기능",
+          "quote": "세종시 관련 데이터를 스스로 학습하여 답변",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "색인 확인·재검증 필요",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      },
+      "revisionNote": "서비스 존재와 정식 운영상태를 구분해 status를 운영에서 미확인으로 정정."
+    },
+    {
+      "id": "C009",
+      "region": "경기도",
+      "city": "광역",
+      "title": "AI 노인말벗서비스",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "안부확인이 필요한 65세 이상 노인에게 AI가 주 1회 전화해 대화를 나누는 서비스.",
+      "tech": "대화형 AI",
+      "benefit": "정기 안부확인과 돌봄 연계",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.gg.go.kr/ggcare/hmpg/aiap/appl/aiapInfoForm.do",
+      "sourceTitle": "서비스 신청 - AI 노인 말벗 서비스 - 누구나돌봄 플랫폼",
+      "sourceIds": [
+        "S09",
+        "S18"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-10-17",
+      "currentStatus": "미확인",
+      "verification": "원문 교차확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "공식 도 안내는 색인 확인. 용인시 상하동 원문으로 같은 도 사업의 신청 안내를 교차 확인. 남양주시도 도 안내 관할지역에 포함되나 별도 독립사업으로 세지 않음.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S09",
+          "claim": "사업 및 기능",
+          "quote": "AI가 주1회 핸드폰이나 집전화로",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        },
+        {
+          "sourceId": "S18",
+          "claim": "동일 도 사업 지역 신청 안내",
+          "quote": "인공지능(AI)과 생성형언어모델(LLM)을 활용",
+          "locator": "2026-05-20 상하동 게시물",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 교차확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C010",
+      "region": "충청북도",
+      "city": "광역",
+      "title": "생성형 AI 업무비서",
+      "category": "내부 행정자동화",
+      "status": "운영",
+      "summary": "도 직원의 보고서 초안·문서요약·자료 시각화 등을 지원하는 통합 AI 업무도구.",
+      "tech": "생성형 AI",
+      "benefit": "행정문서 작성 및 정보처리 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.chungbuk.go.kr/www/selectBbsNttView.do?bbsNo=65&key=429&nttNo=418739",
+      "sourceTitle": "충북도, 생성형 AI 업무비서 전 직원 보급",
+      "sourceIds": [
+        "S10"
+      ],
+      "publishedAt": "2026-04-09",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-04-09",
+      "currentStatus": "미확인",
+      "verification": "색인 확인·재검증 필요",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "보도자료상 2026-04-01 전면 가동. 효율 향상 수치는 없고 원문 직접 열기는 오류.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S10",
+          "claim": "사업 및 기능",
+          "quote": "4월 1일부터 본격 가동",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "색인 확인·재검증 필요",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C011",
+      "region": "충청남도",
+      "city": "시군명 미확인",
+      "title": "AI 기반 다국어 농작업 안전관리",
+      "category": "안전·재난",
+      "status": "기획",
+      "summary": "외국인 농업근로자에게 다국어 안전정보를 제공하고 전자서명과 교육 이력을 관리하는 현장 실증 사업.",
+      "tech": "AI 다국어 정보제공",
+      "benefit": "언어 차이에 따른 안전정보 전달 공백 완화",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://cnnongup.chungnam.go.kr/board/B0005.cs?act=read&articleId=234682&m=&pageIndex=1&pageUnit=15&searchCondition=&searchEndDt=&searchKeyword=&searchStartDt=",
+      "sourceTitle": "AI로 외국인 농업 근로자 안전 지킨다",
+      "sourceIds": [
+        "S11"
+      ],
+      "publishedAt": "2026-09-16",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-09-16",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": false,
+      "budget": "미확인",
+      "limitations": "3개 시군 15개 농가 대상은 실증 범위. 실제 착수·완료 실적과 시군명은 미확인. 실증 추진 발표로 보수적으로 분류.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S11",
+          "claim": "사업 계획 또는 문헌 수록",
+          "quote": "3 개 시군 15 개 농가",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "미확인",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C012",
+      "region": "전북특별자치도",
+      "city": "광역",
+      "title": "전북AI 행정업무 지원",
+      "category": "내부 행정자동화",
+      "status": "운영",
+      "summary": "도청 내부 GPU 서버에서 생성형 AI를 운영해 문서 초안·자료 생성 등 직원 업무를 지원한다.",
+      "tech": "내부 구축 생성형 AI",
+      "benefit": "직원 AI 활용 및 문서작성 지원",
+      "performance": "본청 직원 97% 활용, 누적 질의 약 22만 건(2026-06-24 도 발표).",
+      "performanceVerification": "공식 기관 자기보고·원문 확인·측정방법 미확인",
+      "sourceUrl": "https://www.jeonbuk.go.kr/newsroom/board/view.jeonbuk?boardId=BBS_0000090&dataSid=664402&menuCd=DOM_000001101000000000",
+      "sourceTitle": "전북자치도, 자체 구축 전북AI 최신 모델로 고도화",
+      "sourceIds": [
+        "S12"
+      ],
+      "publishedAt": "2026-06-24",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-06-24",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "주소 간소화 후 보도자료 본문 직접 확인. 97%·약 22만 건은 2026-06-24 발표 수치. 사용률 산식·집계기간·시간절감·독립 효과평가는 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S12",
+          "claim": "시행 및 기능",
+          "quote": "본청 직원의 97%가 활용",
+          "locator": "본문",
+          "supportsPerformance": true
+        },
+        {
+          "sourceId": "S12",
+          "claim": "사업 및 기능",
+          "quote": "본청 직원의 97%가 활용",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": true
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "공식 기관 자기보고·원문 확인·측정방법 미확인",
+        "budget": "미확인"
+      },
+      "revisionNote": "2차 공식자료 조사로 보완. 이전 상태: 색인 확인·재검증 필요 / 운영"
+    },
+    {
+      "id": "C013",
+      "region": "전라남도",
+      "city": "고흥군·완도군·진도군·신안군",
+      "title": "섬지역 AI 기반 통합돌봄",
+      "category": "복지·돌봄",
+      "status": "기획",
+      "summary": "섬지역 노인 대상 AI 돌봄로봇·비대면 심리상담·케어푸드를 연계하는 사업.",
+      "tech": "AI 돌봄로봇·이상징후 분석",
+      "benefit": "섬지역 돌봄 접근성 개선",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.jeonnam.go.kr/M7116/boardView.do?displayHeader=&infoReturn=&menuId=jeonnam0202000000&pageIndex=1&searchText=&searchType=&seq=1961118",
+      "sourceTitle": "전남도, 섬지역 어르신 의료·복지 서비스 접근성 높인다",
+      "sourceIds": [
+        "S13"
+      ],
+      "publishedAt": "2026-03-15",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-03-15",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": false,
+      "budget": "미확인",
+      "limitations": "공모 선정과 4개 군의 100여 명 대상 계획 확인. 실제 서비스 제공 인원·착수일은 미확인. 목표를 실적으로 바꾸지 않음.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S13",
+          "claim": "사업 계획 또는 문헌 수록",
+          "quote": "65세 이상 어르신 100여 명을 대상",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "미확인",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C014",
+      "region": "경상북도",
+      "city": "광역",
+      "title": "챗경북",
+      "category": "내부 행정자동화",
+      "status": "운영",
+      "summary": "경북도가 자체 개발·운영한 인공지능 플랫폼. 도의회 자료에서 운영 사실과 개선 요구를 확인했다.",
+      "tech": "인공지능 챗봇",
+      "benefit": "행정 AI 활용 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://council.gb.go.kr/kr/bbs?bbs_id=media&flag=all&keyword=%EB%8F%85%EB%8F%84&list_style=&page=9&reform=view&search_code=&state_code=&uid=8B476C2B7F27B4A05BA6E08686FC8BB2",
+      "sourceTitle": "김원석 경북도의원, 도정질문 통해 챗경북 활용 내실화 요구",
+      "sourceIds": [
+        "S16"
+      ],
+      "publishedAt": "2023-04-26",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2023-04-26",
+      "currentStatus": "미확인",
+      "verification": "색인 확인·재검증 필요",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "2023년 당시 운영 사실만 확인. 도의회가 답변 오류와 정보보안 우려를 제기함. 현재 지속운영·개선 결과는 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S16",
+          "claim": "사업 및 기능",
+          "quote": "개발하여 운영 중에 있는 챗경북",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "색인 확인·재검증 필요",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C015",
+      "region": "경상남도",
+      "city": "광역",
+      "title": "생성형 AI 통합복지플랫폼",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "도 자체 서버와 정보DB를 활용해 문자·음성으로 복지 질문에 응답하는 서비스.",
+      "tech": "RAG·생성형 AI·음성",
+      "benefit": "복지정보 상담·검색 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://welfare.gyeongnam.go.kr/index.gsnd?menuId=0000000028",
+      "sourceTitle": "FAQ",
+      "sourceIds": [
+        "S14"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-10-17",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "FAQ 원문에서 시스템 구조와 이용 경로 확인. 응답 정확도·실제 이용량·운영 시작일 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S14",
+          "claim": "사업 및 기능",
+          "quote": "검색증강생성(RAG) 기능을 기본 탑재",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C016",
+      "region": "제주특별자치도",
+      "city": "제주시·서귀포시",
+      "title": "스마트 노인돌봄 서비스",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "홀로 사는 65세 이상 노인에게 AI 돌봄기기로 안부확인과 정서지원을 제공한다.",
+      "tech": "AI 돌봄기기",
+      "benefit": "독거노인 안부확인·정서지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://jeju.go.kr/lifecycle/policy/list.htm?act=view&category=003&seq=80",
+      "sourceTitle": "정책목록 - 생애주기별 인구정책",
+      "sourceIds": [
+        "S15"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-10-17",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "현재 서비스 안내 원문 확인. 제주시·서귀포시는 행정시. 안내에 없는 지원 인원·만족도는 성과로 기입하지 않음.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S15",
+          "claim": "사업 및 기능",
+          "quote": "인공지능(AI) 돌봄 기기 활용",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C017",
+      "region": "경기도",
+      "city": "용인시 기흥구 상하동",
+      "title": "AI 노인말벗서비스 지역 신청 안내",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "경기도 AI 노인말벗 사업의 상하동 주민 신청 경로와 문의처를 안내한다.",
+      "tech": "생성형 언어모델·대화형 AI",
+      "benefit": "동 행정복지센터를 통한 신청 연계",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.giheunggu.go.kr/_lmth/03_board/board_0701.asp?board_idx=MTE3MDkz&mode=view&page=3",
+      "sourceTitle": "동소식 - 기흥구청",
+      "sourceIds": [
+        "S18"
+      ],
+      "publishedAt": "2026-05-20",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-05-20",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "C009의 지역 접수 안내. 용인 독립 AI 사업이나 별도 정책 1개로 집계하지 않음.",
+      "parentCaseId": "C009",
+      "recordType": "지역 접수 안내(중복 사업)",
+      "evidence": [
+        {
+          "sourceId": "S18",
+          "claim": "사업 및 기능",
+          "quote": "인공지능(AI)과 생성형언어모델(LLM)을 활용",
+          "locator": "본문·서비스 안내",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C018",
+      "region": "서울특별시",
+      "city": "용산구",
+      "title": "AI 다국어 동시통역 민원안내",
+      "category": "민원·시민서비스",
+      "status": "미확인",
+      "summary": "NIA·행정안전부 공동 사례집의 공식 목차에 용산구 AI 다국어 동시통역 민원안내가 수록되어 있다.",
+      "tech": "AI 동시통역",
+      "benefit": "미확인",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?bcIdx=29161&cbIdx=37989",
+      "sourceTitle": "AI 정부 서비스 사례집",
+      "sourceIds": [
+        "S19"
+      ],
+      "publishedAt": "2026-03-25",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-03-25",
+      "currentStatus": "미확인",
+      "verification": "문헌 수록 확인",
+      "implementationEvidence": false,
+      "budget": "미확인",
+      "limitations": "목차에서 기관·사업 존재만 확인. 첨부 PDF 본문은 미열람. 시행일·현재 상태·언어 수·성과는 미확인.",
+      "parentCaseId": null,
+      "recordType": "공식 목차 수록·상세 미확인",
+      "evidence": [
+        {
+          "sourceId": "S19",
+          "claim": "사업 계획 또는 문헌 수록",
+          "quote": "서울시 용산구, AI 다국어 동시통역 민원안내",
+          "locator": "공식 목차",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "문헌 수록 확인",
+        "implementation": "미확인",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C019",
+      "region": "서울특별시",
+      "city": "강남구",
+      "title": "AI 부정주차 관리시스템",
+      "category": "교통·도시",
+      "status": "운영",
+      "summary": "AI 부정주차 단속시스템의 도산공원 운영 현장을 강남구의회가 방문해 점검하고 시연한 사실을 강남구 공식 소식지에서 확인했다.",
+      "tech": "AI 주차관리",
+      "benefit": "거주자우선주차 구역의 부정주차 관리 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.gangnam.go.kr/gangnamlife/2024/html/vol351/sub02_04.html",
+      "sourceTitle": "강남라이프 2024 vol351 구의회 소식: 행정안전위원회 현장방문",
+      "sourceIds": [
+        "S24",
+        "S19"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2024-10-15",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "공식 소식지의 2024-10-15 현장방문 기록으로 시행 사실 확인. 소식지의 정확한 발행일과 전체 운영 면수·단속 실적·현재 지속운영 여부는 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S24",
+          "claim": "시행 및 기능",
+          "quote": "7월 1일부터 시행 중인 AI 부정주차 단속시스템",
+          "locator": "행정안전위원회 현장방문 실시(10.15.)",
+          "supportsPerformance": false
+        },
+        {
+          "sourceId": "S19",
+          "claim": "사업 계획 또는 문헌 수록",
+          "quote": "서울시 강남구, AI 부정주차 관리시스템",
+          "locator": "공식 목차",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      },
+      "revisionNote": "2차 공식자료 조사로 보완. 이전 상태: 문헌 수록 확인 / 미확인",
+      "implementationStartedAt": "2024-07-01(공식 현장방문 기록의 소급 설명)"
+    },
+    {
+      "id": "C020",
+      "region": "광주광역시",
+      "city": "광역",
+      "title": "AI 당직시스템",
+      "category": "내부 행정자동화",
+      "status": "운영",
+      "summary": "광주 AI 당지기는 야간·휴일 민원을 자동 접수하고 5개 자치구와 관련 기관에 전달하는 당직 민원 시스템이다.",
+      "tech": "AI 당직",
+      "benefit": "야간·휴일 민원 접수 및 담당기관 연계",
+      "performance": "총 29,057건 중 24,108건 직접 처리, 약 83%(2025-12-19 공식 온라인뉴스 발표).",
+      "performanceVerification": "공식 기관 자기보고·원문 확인·정확한 집계기간 및 측정방법 미확인",
+      "sourceUrl": "https://news.jeonnam-gwangju.go.kr/gallery.es?act=view&b_list=12&bid=0009&cg_code=C01&list_no=4876&mid=a50101000000",
+      "sourceTitle": "똑똑한 신입사원이 입사했다고?",
+      "sourceIds": [
+        "S25",
+        "S19"
+      ],
+      "publishedAt": "2025-12-19",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2025-12-19",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "2024년 8월 도입을 원문에서 확인. 처리율은 기관 자기보고이며 집계 시작·종료일 및 독립 평가 미확인. 절감액은 자료마다 비교범위가 달라 이번 DB 성과에 합산하지 않음.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S25",
+          "claim": "시행 및 기능",
+          "quote": "총 29,057건 중 24,108건 직접 처리!",
+          "locator": "AI 대변인 및 AI 당지기 항목",
+          "supportsPerformance": true
+        },
+        {
+          "sourceId": "S19",
+          "claim": "사업 계획 또는 문헌 수록",
+          "quote": "광주광역시, AI 당직시스템",
+          "locator": "공식 목차",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "공식 기관 자기보고·원문 확인·정확한 집계기간 및 측정방법 미확인",
+        "budget": "미확인"
+      },
+      "revisionNote": "2차 공식자료 조사로 보완. 이전 상태: 문헌 수록 확인 / 미확인",
+      "implementationStartedAt": "2024-08(일자 미확인)",
+      "performancePeriod": "미확인"
+    },
+    {
+      "id": "C021",
+      "region": "경기도",
+      "city": "광역",
+      "title": "경기데이터 찾아드림",
+      "category": "정책·데이터",
+      "status": "시범운영",
+      "summary": "일상적인 문장으로 경기도 공공데이터를 물으면 생성형 AI가 관련 정보를 찾아 설명하는 서비스로, 공식 완료보고 자료에서 실증 수행 사실을 확인했다.",
+      "tech": "AI 데이터 검색",
+      "benefit": "공공데이터 탐색과 설명 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://gnews.gg.go.kr/briefing/brief_gongbo_view.do?BS_CODE=s017&number=63486",
+      "sourceTitle": "경기도, 생성형 AI 활용으로 행정 혁신 로드맵 제시",
+      "sourceIds": [
+        "S26",
+        "S19"
+      ],
+      "publishedAt": "2024-10-22",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2024-10-22",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "2024-10-22 완료보고의 베타테스트·PoC 실증 수행 사실을 확인해 시범운영으로 분류. 정식 전환과 현재 운영상태·처리건수·효과는 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S26",
+          "claim": "시행 및 기능",
+          "quote": "공공서비스에 실질적인 AI 기술을 적용한 서비스를 실증",
+          "locator": "실증(PoC) 주요 성과 및 경기데이터 찾아드림 설명",
+          "supportsPerformance": false
+        },
+        {
+          "sourceId": "S19",
+          "claim": "사업 계획 또는 문헌 수록",
+          "quote": "경기도, 경기데이터 찾아드림",
+          "locator": "공식 목차",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      },
+      "revisionNote": "2차 공식자료 조사로 보완. 이전 상태: 문헌 수록 확인 / 미확인"
+    },
+    {
+      "id": "C022",
+      "region": "강원특별자치도",
+      "city": "춘천시",
+      "title": "AI케어콜 독거노인 안부확인",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "춘천시 통합돌봄 서비스표에서 우울감·고립감이 높은 65세 이상 독거노인에게 주 1회 AI 안부전화를 제공하는 사업을 확인했다.",
+      "tech": "대화형 AI·음성",
+      "benefit": "독거노인 정기 안부확인",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.chuncheon.go.kr/new-welfare/life/senior/care-delivery-system/",
+      "sourceTitle": "춘천시 의료·요양 통합돌봄",
+      "sourceIds": [
+        "S27",
+        "S28"
+      ],
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-10-17",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "2022-10-26 시의회 회의록에서도 시범사업 시행 답변 확인. 당시 200명은 모집규모이므로 실적에 기입하지 않음. 현행 안내 페이지 게시일·실제 이용자 수·효과·현재 지속운영은 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S27",
+          "claim": "시행 및 기능",
+          "quote": "주1회 안부전화를 통한 안부확인 서비스",
+          "locator": "제공 서비스 표 / 스마트 돌봄 / AI케어콜",
+          "supportsPerformance": false
+        },
+        {
+          "sourceId": "S28",
+          "claim": "2022년 시범사업 시행",
+          "quote": "이번 주 시행이 됐고요.",
+          "locator": "복지정책과장 답변",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C023",
+      "region": "경기도",
+      "city": "남양주시",
+      "title": "전력·통신 AI 기반 고독사 예방 안부살핌",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "전력·통신 사용량을 AI로 분석해 평소와 다른 징후가 있으면 안부를 확인하고, 희망케어센터·행정복지센터 사례관리로 연결하는 서비스.",
+      "tech": "사용패턴 AI 분석·이상징후 탐지",
+      "benefit": "위기징후 발견과 복지상담·사례관리 연계",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://www.nyj.go.kr/www/selectBbsNttView.do?bbsNo=62&key=2481&nttNo=541668",
+      "sourceTitle": "2026 고독사 예방 안부살핌 서비스 신청 안내",
+      "sourceIds": [
+        "S29"
+      ],
+      "publishedAt": "2026-05-11",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2026-05-11",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "시의 2026년 서비스 신청 공지에서 지원내용과 신청 경로를 확인. 운영은 서비스 제공·신청 안내 기준이며 실제 등록·알림·구조 실적은 미확인. 경기도 노인말벗 전화사업 C009와 다른 기능의 시 서비스로 구분.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S29",
+          "claim": "시행 및 기능",
+          "quote": "전력사용량, 통신데이터 사용량을 인공지능으로 분석",
+          "locator": "지원내용 및 신청방법",
+          "supportsPerformance": false
+        }
+      ],
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C024",
+      "region": "전라남도",
+      "city": "순천시(왕조1동 사례)",
+      "title": "순천 AI 안부 케어콜",
+      "category": "복지·돌봄",
+      "status": "운영",
+      "summary": "AI가 주 1회 대화로 안부를 확인하고 결과를 복지 담당자에게 전달해 방문 사후관리를 지원한다.",
+      "tech": "대화형 AI·모니터링",
+      "benefit": "미응답·이상징후에 대한 담당자 방문 연계",
+      "performance": "케어콜 미연결 통보 뒤 담당자가 방문해 응급환자를 발견하고 119 이송을 연계한 사례 1건(2024-08-07 기관 발표).",
+      "performanceVerification": "공식 기관 자기보고·검색 색인 확인·원문 재검증 필요",
+      "sourceUrl": "https://www.suncheon.go.kr/kr/news/0006/0001/?mode=view&seq=66421",
+      "sourceTitle": "AI 기술 적용한 순천 케어콜 사업, 왕조1동 응급환자 생명 구해",
+      "sourceIds": [
+        "S30"
+      ],
+      "publishedAt": "2024-08-07",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2024-08-07",
+      "currentStatus": "미확인",
+      "verification": "색인 확인·재검증 필요",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "공식 시 보도자료의 전체 검색 색인을 확인했으나 원문 직접 접속은 실패. 구조 사례는 AI 단독 성과가 아니라 담당자 방문과 119 조치가 결합된 결과. 일반적인 생존율 개선이나 인과효과를 입증하지 않음.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S30",
+          "claim": "시행 및 기능",
+          "quote": "AI는 대상자들과 나눈 대화 내용을 모니터링",
+          "locator": "보도자료 검색 색인 본문",
+          "supportsPerformance": true
+        }
+      ],
+      "fieldVerification": {
+        "existence": "색인 확인·재검증 필요",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "공식 기관 자기보고·검색 색인 확인·원문 재검증 필요",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C025",
+      "region": "광주광역시",
+      "city": "광역",
+      "title": "생성형 AI 대변인 보도자료 작성 지원",
+      "category": "내부 행정자동화",
+      "status": "운영",
+      "summary": "직원이 입력한 핵심정보를 바탕으로 시 보도자료 서식과 표현기준에 맞춰 제목·초안을 만들고 수정·보완을 지원하는 자체 개발 도구.",
+      "tech": "생성형 AI·문서 초안",
+      "benefit": "보도자료 초안 작성·수정 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://news.jeonnam-gwangju.go.kr/gallery.es?act=view&b_list=12&bid=0009&cg_code=C01&list_no=4876&mid=a50101000000",
+      "sourceTitle": "똑똑한 신입사원이 입사했다고?",
+      "sourceIds": [
+        "S25"
+      ],
+      "publishedAt": "2025-12-19",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2025-12-19",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "공식 온라인뉴스의 담당 공무원 인터뷰와 2025년 4월 도입 설명 확인. 기사 홍보문구의 10분을 측정된 시간절감 실적으로 사용하지 않음. 실제 이용량·개발비·유지비·평가방법 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S25",
+          "claim": "시행 및 기능",
+          "quote": "핵심 정보 입력 시 초안 자동 생성",
+          "locator": "AI 대변인 및 AI 당지기 항목",
+          "supportsPerformance": false
+        }
+      ],
+      "implementationStartedAt": "2025-04(일자 미확인)",
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    },
+    {
+      "id": "C026",
+      "region": "강원특별자치도",
+      "city": "도 및 18개 시군 연계",
+      "title": "AI CCTV 실종자 검색 지원",
+      "category": "안전·재난",
+      "status": "운영",
+      "summary": "도 행정국장이 시의회에서 도내 CCTV에 AI를 적용해 경찰 요청 시 실종자를 검색하고 자료를 제공하는 업무를 2025년 1월부터 수행했다고 설명했다.",
+      "tech": "AI 영상분석·검색",
+      "benefit": "경찰 요청에 따른 실종자 영상 검색 지원",
+      "performance": "미확인",
+      "performanceVerification": "미확인",
+      "sourceUrl": "https://council.gangwon.kr/viewer/minutes.do?mem_sch=all&schwrd=&uid=18309",
+      "sourceTitle": "제340회 기획행정위원회 제1차 회의록",
+      "sourceIds": [
+        "S31"
+      ],
+      "publishedAt": "2025-09-10",
+      "checkedAt": "2026-10-17",
+      "statusAsOf": "2025-09-10",
+      "currentStatus": "미확인",
+      "verification": "원문 확인",
+      "implementationEvidence": true,
+      "budget": "미확인",
+      "limitations": "2025-09-10 공식 회의록의 담당 국장 답변으로 업무 시행 사실 확인. 언급된 약 2만2천 대는 총 관리 CCTV 규모이며 모두 AI 분석 대상이라는 근거는 없어 도입 대수로 기입하지 않음. 발견 건수·정확도·검색시간 절감은 미확인.",
+      "parentCaseId": null,
+      "recordType": "독립 사업",
+      "evidence": [
+        {
+          "sourceId": "S31",
+          "claim": "시행 및 기능",
+          "quote": "경찰에서 요구하면 저희가 그분을 CCTV로 찾아",
+          "locator": "행정국장의 AI CCTV 시행 및 AI당직원 일정 지연 답변",
+          "supportsPerformance": false
+        }
+      ],
+      "implementationStartedAt": "2025-01(일자 미확인)",
+      "fieldVerification": {
+        "existence": "원문 확인",
+        "implementation": "시행 사실 자료 있음",
+        "currentStatus": "미확인",
+        "performance": "미확인",
+        "budget": "미확인"
+      }
+    }
+  ],
+  "candidates": [
+    {
+      "id": "P001",
+      "region": "강원특별자치도",
+      "city": "광역",
+      "title": "휴일·야간 민원응대 AI당직원",
+      "sourceIds": [
+        "S31",
+        "S32",
+        "S17"
+      ],
+      "sourceUrl": "https://council.gangwon.kr/viewer/minutes.do?mem_sch=all&schwrd=&uid=18309",
+      "checkedAt": "2026-10-17",
+      "status": "미확인",
+      "performance": "미확인",
+      "verification": "부분확인·공식 도입 발표 및 운영 지연 답변 확인",
+      "reason": "2025-08-12 도입 보도자료의 제목·게시일 확인. 2025-09-10 공식 회의록에서 당초 9월 1일 실행 예정이 지연됐으며 테스트 후 보완·시행 예정이라고 답변. 이후 정식 운영 개시를 입증하는 본문은 확보하지 못해 후보로 유지."
+    }
+  ],
+  "coverage": [
+    {
+      "region": "서울특별시",
+      "records": 3,
+      "originalVerifiedImplemented": 2,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 1,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "부산광역시",
+      "records": 1,
+      "originalVerifiedImplemented": 1,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "대구광역시",
+      "records": 1,
+      "originalVerifiedImplemented": 1,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "인천광역시",
+      "records": 1,
+      "originalVerifiedImplemented": 1,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "광주광역시",
+      "records": 3,
+      "originalVerifiedImplemented": 3,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "대전광역시",
+      "records": 1,
+      "originalVerifiedImplemented": 1,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "울산광역시",
+      "records": 1,
+      "originalVerifiedImplemented": 0,
+      "indexedImplemented": 1,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 공백",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "세종특별자치시",
+      "records": 1,
+      "originalVerifiedImplemented": 0,
+      "indexedImplemented": 1,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 공백",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "경기도",
+      "records": 4,
+      "originalVerifiedImplemented": 3,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "강원특별자치도",
+      "records": 2,
+      "originalVerifiedImplemented": 2,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 1,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "충청북도",
+      "records": 1,
+      "originalVerifiedImplemented": 0,
+      "indexedImplemented": 1,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 공백",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "충청남도",
+      "records": 1,
+      "originalVerifiedImplemented": 0,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 1,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 공백",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "전북특별자치도",
+      "records": 1,
+      "originalVerifiedImplemented": 1,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "전라남도",
+      "records": 2,
+      "originalVerifiedImplemented": 0,
+      "indexedImplemented": 1,
+      "planOrContentsOnly": 1,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 공백",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "경상북도",
+      "records": 1,
+      "originalVerifiedImplemented": 0,
+      "indexedImplemented": 1,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 공백",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "경상남도",
+      "records": 1,
+      "originalVerifiedImplemented": 1,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    },
+    {
+      "region": "제주특별자치도",
+      "records": 1,
+      "originalVerifiedImplemented": 1,
+      "indexedImplemented": 0,
+      "planOrContentsOnly": 0,
+      "candidateCount": 0,
+      "gap": "원문 기반 시행 확인 사례 있음",
+      "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S01",
+      "title": "서울시 AI 안부확인서비스 일방향에서 양방향으로 업그레이드",
+      "url": "https://www.seoul.go.kr/news/news_report.do?nttNo=444909&tr_code=snews",
+      "publisher": "서울특별시",
+      "publishedAt": "2025-10-20",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S02",
+      "title": "대구광역시 AI상담서비스 시범운영",
+      "url": "https://www.daegu.go.kr/120/customer/pressView.do;jsessionid=35A336C9E96424810C4979882CB47763?curPage=1&num=259&scText=&scType=",
+      "publisher": "대구광역시 120달구벌콜센터",
+      "publishedAt": "2025-04-01",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S03",
+      "title": "부산시, 인공지능(AI) 기반 \"아동돌봄 보이스봇\" 시범운영 개시 : 부산소식 : 보도·해명자료 : 보도자료 : 부산광역시",
+      "url": "https://www.busan.go.kr/nbtnewsBU/1745820?curPage=17&srchBeginDt=&srchEndDt=&srchKey=&srchText=",
+      "publisher": "부산광역시",
+      "publishedAt": "2026-08-03",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S04",
+      "title": "인천시, 카카오톡 기반 민원 챗봇‘인천톡톡’서비스 개시",
+      "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000011584423",
+      "publisher": "인천광역시",
+      "publishedAt": "2025-01-13",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S05",
+      "title": "광주다움 통합돌봄 | 광주광역시 복지·건강",
+      "url": "https://www.gwangju.go.kr/welfare/contentsView.do?pageId=welfare194",
+      "publisher": "광주광역시",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S06",
+      "title": "인공지능 기반 시정홍보 채널‘대전 AI PARK’ 출범 | 대전광역시청",
+      "url": "https://daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=1632&ntatcSeq=1511134035&pageIndex=2",
+      "publisher": "대전광역시",
+      "publishedAt": "2026-04-07",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S07",
+      "title": "물동이Chat",
+      "url": "https://water.ulsan.go.kr/chatbot/chatbot.do",
+      "publisher": "울산광역시 상수도사업본부",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S08",
+      "title": "세종 AI충녕",
+      "url": "https://aichat.sejong.go.kr/",
+      "publisher": "세종특별자치시",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 JS 실행 필요",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S09",
+      "title": "서비스 신청 - AI 노인 말벗 서비스 - 누구나돌봄 플랫폼",
+      "url": "https://www.gg.go.kr/ggcare/hmpg/aiap/appl/aiapInfoForm.do",
+      "publisher": "경기도",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S10",
+      "title": "충북도, 생성형 AI 업무비서 전 직원 보급",
+      "url": "https://www.chungbuk.go.kr/www/selectBbsNttView.do?bbsNo=65&key=429&nttNo=418739",
+      "publisher": "충청북도",
+      "publishedAt": "2026-04-09",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S11",
+      "title": "AI로 외국인 농업 근로자 안전 지킨다",
+      "url": "https://cnnongup.chungnam.go.kr/board/B0005.cs?act=read&articleId=234682&m=&pageIndex=1&pageUnit=15&searchCondition=&searchEndDt=&searchKeyword=&searchStartDt=",
+      "publisher": "충청남도농업기술원",
+      "publishedAt": "2026-09-16",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S12",
+      "title": "전북자치도, 자체 구축 전북AI 최신 모델로 고도화",
+      "url": "https://www.jeonbuk.go.kr/newsroom/board/view.jeonbuk?boardId=BBS_0000090&dataSid=664402&menuCd=DOM_000001101000000000",
+      "publisher": "전북특별자치도",
+      "publishedAt": "2026-06-24",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인(2차 조사에서 주소 간소화 후 확인)",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S13",
+      "title": "전남도, 섬지역 어르신 의료·복지 서비스 접근성 높인다",
+      "url": "https://www.jeonnam.go.kr/M7116/boardView.do?displayHeader=&infoReturn=&menuId=jeonnam0202000000&pageIndex=1&searchText=&searchType=&seq=1961118",
+      "publisher": "전라남도",
+      "publishedAt": "2026-03-15",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S14",
+      "title": "FAQ",
+      "url": "https://welfare.gyeongnam.go.kr/index.gsnd?menuId=0000000028",
+      "publisher": "경상남도",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S15",
+      "title": "정책목록 - 생애주기별 인구정책",
+      "url": "https://jeju.go.kr/lifecycle/policy/list.htm?act=view&category=003&seq=80",
+      "publisher": "제주특별자치도",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S16",
+      "title": "김원석 경북도의원, 도정질문 통해 챗경북 활용 내실화 요구",
+      "url": "https://council.gb.go.kr/kr/bbs?bbs_id=media&flag=all&keyword=%EB%8F%85%EB%8F%84&list_style=&page=9&reform=view&search_code=&state_code=&uid=8B476C2B7F27B4A05BA6E08686FC8BB2",
+      "publisher": "경상북도의회",
+      "publishedAt": "2023-04-26",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S17",
+      "title": "부서 및 직원 검색 목록 - 강원 소개 | 강원특별자치도청 - 강원을 특별하게 도민을 행복하게",
+      "url": "https://state.gwd.go.kr/portal/introduce/personnel?groupCode=720",
+      "publisher": "강원특별자치도",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S18",
+      "title": "동소식 - 기흥구청",
+      "url": "https://www.giheunggu.go.kr/_lmth/03_board/board_0701.asp?board_idx=MTE3MDkz&mode=view&page=3",
+      "publisher": "용인시 기흥구 상하동",
+      "publishedAt": "2026-05-20",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S19",
+      "title": "AI 정부 서비스 사례집",
+      "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?bcIdx=29161&cbIdx=37989",
+      "publisher": "한국지능정보사회진흥원(NIA)",
+      "publishedAt": "2026-03-25",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거"
+    },
+    {
+      "id": "S20",
+      "title": "공공부문에서 인공지능(AI) 어떻게 써야해? 「AI 정부 서비스 사례집」에 우수사례 총집합 | 행정안전부> 뉴스·소식> 보도자료> 보도자료",
+      "url": "https://mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=124639",
+      "publisher": "행정안전부",
+      "publishedAt": "2026-03-24",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "공식 검색 색인 확인·본문 직접 접속 미검토",
+      "role": "조사 참고·개별 성과 근거로 미사용"
+    },
+    {
+      "id": "S21",
+      "title": "2025년 인구정책 시행계획: 스마트 노인돌봄 서비스",
+      "url": "https://www.jeju.go.kr/lifecycle/notice/guide.htm?act=download&no=1&seq=2003033",
+      "publisher": "제주특별자치도",
+      "publishedAt": "미확인",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인만 확인·첨부 본문 미검토",
+      "role": "조사 참고·개별 성과 근거로 미사용"
+    },
+    {
+      "id": "S22",
+      "title": "부산시 AI 기반 아동돌봄 보이스봇 시범운영 안내",
+      "publisher": "부산광역시 여성가족과",
+      "publishedAt": "2026-08-03",
+      "url": "https://www.busan.go.kr/nbnews/1745975",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "통합 공지사항 본문"
+    },
+    {
+      "id": "S23",
+      "title": "인천광역시 알림톡 챗봇서비스 개시 안내",
+      "publisher": "인천광역시 정보화담당관",
+      "publishedAt": "2025-01-13",
+      "url": "https://www.incheon.go.kr/IC010101/view?curPage=90&nttNo=2044396",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "새소식 본문"
+    },
+    {
+      "id": "S24",
+      "title": "강남라이프 2024 vol351 구의회 소식: 행정안전위원회 현장방문",
+      "publisher": "강남구",
+      "publishedAt": "미확인",
+      "url": "https://www.gangnam.go.kr/gangnamlife/2024/html/vol351/sub02_04.html",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "행정안전위원회 현장방문 실시(10.15.)"
+    },
+    {
+      "id": "S25",
+      "title": "똑똑한 신입사원이 입사했다고?",
+      "publisher": "광주광역시 공식 온라인뉴스",
+      "publishedAt": "2025-12-19",
+      "url": "https://news.jeonnam-gwangju.go.kr/gallery.es?act=view&b_list=12&bid=0009&cg_code=C01&list_no=4876&mid=a50101000000",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "AI 대변인 및 AI 당지기 항목"
+    },
+    {
+      "id": "S26",
+      "title": "경기도, 생성형 AI 활용으로 행정 혁신 로드맵 제시",
+      "publisher": "경기도 AI미래행정과",
+      "publishedAt": "2024-10-22",
+      "url": "https://gnews.gg.go.kr/briefing/brief_gongbo_view.do?BS_CODE=s017&number=63486",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "실증(PoC) 주요 성과 및 경기데이터 찾아드림 설명"
+    },
+    {
+      "id": "S27",
+      "title": "춘천시 의료·요양 통합돌봄",
+      "publisher": "춘천시 복지포털",
+      "publishedAt": "미확인",
+      "url": "https://www.chuncheon.go.kr/new-welfare/life/senior/care-delivery-system/",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "제공 서비스 표 / 스마트 돌봄 / AI케어콜"
+    },
+    {
+      "id": "S28",
+      "title": "제321회 제1차 복지환경위원회 회의록",
+      "publisher": "춘천시의회",
+      "publishedAt": "2022-10-26",
+      "url": "https://kms.chuncheon.go.kr/minutes/svc/web/cms/mnts/SvcMntsViewer.php?schSn=3919",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "복지정책과장의 AI케어콜 시범사업 시행 답변"
+    },
+    {
+      "id": "S29",
+      "title": "2026 고독사 예방 안부살핌 서비스 신청 안내",
+      "publisher": "남양주시 통합사례관리팀",
+      "publishedAt": "2026-05-11",
+      "url": "https://www.nyj.go.kr/www/selectBbsNttView.do?bbsNo=62&key=2481&nttNo=541668",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "지원내용 및 신청방법"
+    },
+    {
+      "id": "S30",
+      "title": "AI 기술 적용한 순천 케어콜 사업, 왕조1동 응급환자 생명 구해",
+      "publisher": "순천시 왕조1동",
+      "publishedAt": "2024-08-07",
+      "url": "https://www.suncheon.go.kr/kr/news/0006/0001/?mode=view&seq=66421",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거",
+      "locator": "보도자료 검색 색인 본문"
+    },
+    {
+      "id": "S31",
+      "title": "제340회 기획행정위원회 제1차 회의록",
+      "publisher": "강원특별자치도의회",
+      "publishedAt": "2025-09-10",
+      "url": "https://council.gangwon.kr/viewer/minutes.do?mem_sch=all&schwrd=&uid=18309",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "원문 텍스트 확인",
+      "role": "개별 사례 근거",
+      "locator": "행정국장의 AI CCTV 시행 및 AI당직원 일정 지연 답변"
+    },
+    {
+      "id": "S32",
+      "title": "강원특별자치도, 전국 최초 대화 가능한 AI 당직원 도입",
+      "publisher": "강원특별자치도 지능정보정책과",
+      "publishedAt": "2025-08-12",
+      "url": "https://state.gwd.go.kr/portal/briefing/pressRelease?seq=6256",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "제목·게시일 확인·HWP 첨부 본문 미열람",
+      "role": "개별 사례 근거",
+      "locator": "보도자료 목록 및 게시물 메타데이터"
+    },
+    {
+      "id": "S33",
+      "title": "울산시, 올해 고래수 안정적 공급에 총력",
+      "publisher": "울산광역시 상수도사업본부",
+      "publishedAt": "2026-03-24",
+      "url": "https://www.ulsan.go.kr/u/rep/bbs/view.do?bbsId=BBS_0000000000000027&dataId=179841&mId=001004003001000000",
+      "checkedAt": "2026-10-17",
+      "accessStatus": "검색 색인 확인·원문 접속 실패",
+      "role": "개별 사례 근거",
+      "locator": "물동이 AI 챗봇 도입 항목"
+    }
+  ],
+  "release": "2차 조사 보강",
+  "previousRelease": "../ai-local-database.json"
+}

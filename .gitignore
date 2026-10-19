@@ -1,0 +1,48 @@
+# ==============================================================================
+# 보안 및 민감 정보 차단 목록 (.gitignore)
+# ==============================================================================
+# 환경변수 및 비밀키 파일
+.env
+.env.*
+*.key
+*.pem
+
+# 데이터베이스 파일
+*.db
+*.sqlite3
+
+# 파이썬 캐시 및 가상환경
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+
+# 노드 및 빌드 산출물
+node_modules/
+dist/
+build/
+.next/
+*.log
+
+# 시스템 및 IDE 파일
+.DS_Store
+.idea/
+.vscode/
+Thumbs.db
+desktop.ini
+
+# 임시 테스트 문서 및 바이너리 산출물
+test*.hwpx
+services/api/test*.hwpx
+
+# 파이썬 테스트 및 캐시
+.pytest_cache/
+.coverage
+htmlcov/
+
+!.env.example
+
+.github-upload/
+

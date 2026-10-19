@@ -1,0 +1,172 @@
+[
+  {
+    "region": "서울특별시",
+    "records": 3,
+    "originalVerifiedImplemented": 2,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 1,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "부산광역시",
+    "records": 1,
+    "originalVerifiedImplemented": 1,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "대구광역시",
+    "records": 1,
+    "originalVerifiedImplemented": 1,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "인천광역시",
+    "records": 1,
+    "originalVerifiedImplemented": 1,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "광주광역시",
+    "records": 3,
+    "originalVerifiedImplemented": 3,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "대전광역시",
+    "records": 1,
+    "originalVerifiedImplemented": 1,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "울산광역시",
+    "records": 1,
+    "originalVerifiedImplemented": 0,
+    "indexedImplemented": 1,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 공백",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "세종특별자치시",
+    "records": 1,
+    "originalVerifiedImplemented": 0,
+    "indexedImplemented": 1,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 공백",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "경기도",
+    "records": 4,
+    "originalVerifiedImplemented": 3,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "강원특별자치도",
+    "records": 2,
+    "originalVerifiedImplemented": 2,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 1,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "충청북도",
+    "records": 1,
+    "originalVerifiedImplemented": 0,
+    "indexedImplemented": 1,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 공백",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "충청남도",
+    "records": 1,
+    "originalVerifiedImplemented": 0,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 1,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 공백",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "전북특별자치도",
+    "records": 1,
+    "originalVerifiedImplemented": 1,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "전라남도",
+    "records": 2,
+    "originalVerifiedImplemented": 0,
+    "indexedImplemented": 1,
+    "planOrContentsOnly": 1,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 공백",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "경상북도",
+    "records": 1,
+    "originalVerifiedImplemented": 0,
+    "indexedImplemented": 1,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 공백",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "경상남도",
+    "records": 1,
+    "originalVerifiedImplemented": 1,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  },
+  {
+    "region": "제주특별자치도",
+    "records": 1,
+    "originalVerifiedImplemented": 1,
+    "indexedImplemented": 0,
+    "planOrContentsOnly": 0,
+    "candidateCount": 0,
+    "gap": "원문 기반 시행 확인 사례 있음",
+    "notes": "사업 없음이 아니라 이번 조사에서 직접 원문으로 시행 확인한 사례가 없다는 뜻. 전수조사 아님."
+  }
+]

@@ -1,0 +1,95 @@
+[
+  {
+    "id": "C002",
+    "change": "보완·정정",
+    "title": "아동돌봄 보이스봇",
+    "beforeVerification": "색인 확인·재검증 필요",
+    "afterVerification": "원문 확인",
+    "beforeStatus": "시범운영",
+    "afterStatus": "시범운영"
+  },
+  {
+    "id": "C004",
+    "change": "보완·정정",
+    "title": "민원 챗봇 인천톡톡",
+    "beforeVerification": "색인 확인·재검증 필요",
+    "afterVerification": "원문 확인",
+    "beforeStatus": "운영",
+    "afterStatus": "운영"
+  },
+  {
+    "id": "C008",
+    "change": "보완·정정",
+    "title": "생성형 AI 민원안내 AI충녕",
+    "beforeVerification": "색인 확인·재검증 필요",
+    "afterVerification": "색인 확인·재검증 필요",
+    "beforeStatus": "운영",
+    "afterStatus": "미확인"
+  },
+  {
+    "id": "C012",
+    "change": "보완·정정",
+    "title": "전북AI 행정업무 지원",
+    "beforeVerification": "색인 확인·재검증 필요",
+    "afterVerification": "원문 확인",
+    "beforeStatus": "운영",
+    "afterStatus": "운영"
+  },
+  {
+    "id": "C019",
+    "change": "보완·정정",
+    "title": "AI 부정주차 관리시스템",
+    "beforeVerification": "문헌 수록 확인",
+    "afterVerification": "원문 확인",
+    "beforeStatus": "미확인",
+    "afterStatus": "운영"
+  },
+  {
+    "id": "C020",
+    "change": "보완·정정",
+    "title": "AI 당직시스템",
+    "beforeVerification": "문헌 수록 확인",
+    "afterVerification": "원문 확인",
+    "beforeStatus": "미확인",
+    "afterStatus": "운영"
+  },
+  {
+    "id": "C021",
+    "change": "보완·정정",
+    "title": "경기데이터 찾아드림",
+    "beforeVerification": "문헌 수록 확인",
+    "afterVerification": "원문 확인",
+    "beforeStatus": "미확인",
+    "afterStatus": "시범운영"
+  },
+  {
+    "id": "C022",
+    "change": "신규",
+    "title": "AI케어콜 독거노인 안부확인",
+    "verification": "원문 확인"
+  },
+  {
+    "id": "C023",
+    "change": "신규",
+    "title": "전력·통신 AI 기반 고독사 예방 안부살핌",
+    "verification": "원문 확인"
+  },
+  {
+    "id": "C024",
+    "change": "신규",
+    "title": "순천 AI 안부 케어콜",
+    "verification": "색인 확인·재검증 필요"
+  },
+  {
+    "id": "C025",
+    "change": "신규",
+    "title": "생성형 AI 대변인 보도자료 작성 지원",
+    "verification": "원문 확인"
+  },
+  {
+    "id": "C026",
+    "change": "신규",
+    "title": "AI CCTV 실종자 검색 지원",
+    "verification": "원문 확인"
+  }
+]

@@ -1,0 +1,344 @@
+[
+  {
+    "id": "S01",
+    "title": "서울시 AI 안부확인서비스 일방향에서 양방향으로 업그레이드",
+    "url": "https://www.seoul.go.kr/news/news_report.do?nttNo=444909&tr_code=snews",
+    "publisher": "서울특별시",
+    "publishedAt": "2025-10-20",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S02",
+    "title": "대구광역시 AI상담서비스 시범운영",
+    "url": "https://www.daegu.go.kr/120/customer/pressView.do;jsessionid=35A336C9E96424810C4979882CB47763?curPage=1&num=259&scText=&scType=",
+    "publisher": "대구광역시 120달구벌콜센터",
+    "publishedAt": "2025-04-01",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S03",
+    "title": "부산시, 인공지능(AI) 기반 \"아동돌봄 보이스봇\" 시범운영 개시 : 부산소식 : 보도·해명자료 : 보도자료 : 부산광역시",
+    "url": "https://www.busan.go.kr/nbtnewsBU/1745820?curPage=17&srchBeginDt=&srchEndDt=&srchKey=&srchText=",
+    "publisher": "부산광역시",
+    "publishedAt": "2026-08-03",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S04",
+    "title": "인천시, 카카오톡 기반 민원 챗봇‘인천톡톡’서비스 개시",
+    "url": "https://www.incheon.go.kr/IC010205/view?repSeq=DOM_0000000011584423",
+    "publisher": "인천광역시",
+    "publishedAt": "2025-01-13",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S05",
+    "title": "광주다움 통합돌봄 | 광주광역시 복지·건강",
+    "url": "https://www.gwangju.go.kr/welfare/contentsView.do?pageId=welfare194",
+    "publisher": "광주광역시",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S06",
+    "title": "인공지능 기반 시정홍보 채널‘대전 AI PARK’ 출범 | 대전광역시청",
+    "url": "https://daejeon.go.kr/drh/board/boardNormalView.do?boardId=normal_0189&menuSeq=1632&ntatcSeq=1511134035&pageIndex=2",
+    "publisher": "대전광역시",
+    "publishedAt": "2026-04-07",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S07",
+    "title": "물동이Chat",
+    "url": "https://water.ulsan.go.kr/chatbot/chatbot.do",
+    "publisher": "울산광역시 상수도사업본부",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S08",
+    "title": "세종 AI충녕",
+    "url": "https://aichat.sejong.go.kr/",
+    "publisher": "세종특별자치시",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 JS 실행 필요",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S09",
+    "title": "서비스 신청 - AI 노인 말벗 서비스 - 누구나돌봄 플랫폼",
+    "url": "https://www.gg.go.kr/ggcare/hmpg/aiap/appl/aiapInfoForm.do",
+    "publisher": "경기도",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S10",
+    "title": "충북도, 생성형 AI 업무비서 전 직원 보급",
+    "url": "https://www.chungbuk.go.kr/www/selectBbsNttView.do?bbsNo=65&key=429&nttNo=418739",
+    "publisher": "충청북도",
+    "publishedAt": "2026-04-09",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S11",
+    "title": "AI로 외국인 농업 근로자 안전 지킨다",
+    "url": "https://cnnongup.chungnam.go.kr/board/B0005.cs?act=read&articleId=234682&m=&pageIndex=1&pageUnit=15&searchCondition=&searchEndDt=&searchKeyword=&searchStartDt=",
+    "publisher": "충청남도농업기술원",
+    "publishedAt": "2026-09-16",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S12",
+    "title": "전북자치도, 자체 구축 전북AI 최신 모델로 고도화",
+    "url": "https://www.jeonbuk.go.kr/newsroom/board/view.jeonbuk?boardId=BBS_0000090&dataSid=664402&menuCd=DOM_000001101000000000",
+    "publisher": "전북특별자치도",
+    "publishedAt": "2026-06-24",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인(2차 조사에서 주소 간소화 후 확인)",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S13",
+    "title": "전남도, 섬지역 어르신 의료·복지 서비스 접근성 높인다",
+    "url": "https://www.jeonnam.go.kr/M7116/boardView.do?displayHeader=&infoReturn=&menuId=jeonnam0202000000&pageIndex=1&searchText=&searchType=&seq=1961118",
+    "publisher": "전라남도",
+    "publishedAt": "2026-03-15",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S14",
+    "title": "FAQ",
+    "url": "https://welfare.gyeongnam.go.kr/index.gsnd?menuId=0000000028",
+    "publisher": "경상남도",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S15",
+    "title": "정책목록 - 생애주기별 인구정책",
+    "url": "https://jeju.go.kr/lifecycle/policy/list.htm?act=view&category=003&seq=80",
+    "publisher": "제주특별자치도",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S16",
+    "title": "김원석 경북도의원, 도정질문 통해 챗경북 활용 내실화 요구",
+    "url": "https://council.gb.go.kr/kr/bbs?bbs_id=media&flag=all&keyword=%EB%8F%85%EB%8F%84&list_style=&page=9&reform=view&search_code=&state_code=&uid=8B476C2B7F27B4A05BA6E08686FC8BB2",
+    "publisher": "경상북도의회",
+    "publishedAt": "2023-04-26",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S17",
+    "title": "부서 및 직원 검색 목록 - 강원 소개 | 강원특별자치도청 - 강원을 특별하게 도민을 행복하게",
+    "url": "https://state.gwd.go.kr/portal/introduce/personnel?groupCode=720",
+    "publisher": "강원특별자치도",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S18",
+    "title": "동소식 - 기흥구청",
+    "url": "https://www.giheunggu.go.kr/_lmth/03_board/board_0701.asp?board_idx=MTE3MDkz&mode=view&page=3",
+    "publisher": "용인시 기흥구 상하동",
+    "publishedAt": "2026-05-20",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S19",
+    "title": "AI 정부 서비스 사례집",
+    "url": "https://www.nia.or.kr/site/nia_kor/ex/bbs/View.do?bcIdx=29161&cbIdx=37989",
+    "publisher": "한국지능정보사회진흥원(NIA)",
+    "publishedAt": "2026-03-25",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거"
+  },
+  {
+    "id": "S20",
+    "title": "공공부문에서 인공지능(AI) 어떻게 써야해? 「AI 정부 서비스 사례집」에 우수사례 총집합 | 행정안전부> 뉴스·소식> 보도자료> 보도자료",
+    "url": "https://mois.go.kr/frt/bbs/type010/commonSelectBoardArticle.do?bbsId=BBSMSTR_000000000008&nttId=124639",
+    "publisher": "행정안전부",
+    "publishedAt": "2026-03-24",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "공식 검색 색인 확인·본문 직접 접속 미검토",
+    "role": "조사 참고·개별 성과 근거로 미사용"
+  },
+  {
+    "id": "S21",
+    "title": "2025년 인구정책 시행계획: 스마트 노인돌봄 서비스",
+    "url": "https://www.jeju.go.kr/lifecycle/notice/guide.htm?act=download&no=1&seq=2003033",
+    "publisher": "제주특별자치도",
+    "publishedAt": "미확인",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인만 확인·첨부 본문 미검토",
+    "role": "조사 참고·개별 성과 근거로 미사용"
+  },
+  {
+    "id": "S22",
+    "title": "부산시 AI 기반 아동돌봄 보이스봇 시범운영 안내",
+    "publisher": "부산광역시 여성가족과",
+    "publishedAt": "2026-08-03",
+    "url": "https://www.busan.go.kr/nbnews/1745975",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "통합 공지사항 본문"
+  },
+  {
+    "id": "S23",
+    "title": "인천광역시 알림톡 챗봇서비스 개시 안내",
+    "publisher": "인천광역시 정보화담당관",
+    "publishedAt": "2025-01-13",
+    "url": "https://www.incheon.go.kr/IC010101/view?curPage=90&nttNo=2044396",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "새소식 본문"
+  },
+  {
+    "id": "S24",
+    "title": "강남라이프 2024 vol351 구의회 소식: 행정안전위원회 현장방문",
+    "publisher": "강남구",
+    "publishedAt": "미확인",
+    "url": "https://www.gangnam.go.kr/gangnamlife/2024/html/vol351/sub02_04.html",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "행정안전위원회 현장방문 실시(10.15.)"
+  },
+  {
+    "id": "S25",
+    "title": "똑똑한 신입사원이 입사했다고?",
+    "publisher": "광주광역시 공식 온라인뉴스",
+    "publishedAt": "2025-12-19",
+    "url": "https://news.jeonnam-gwangju.go.kr/gallery.es?act=view&b_list=12&bid=0009&cg_code=C01&list_no=4876&mid=a50101000000",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "AI 대변인 및 AI 당지기 항목"
+  },
+  {
+    "id": "S26",
+    "title": "경기도, 생성형 AI 활용으로 행정 혁신 로드맵 제시",
+    "publisher": "경기도 AI미래행정과",
+    "publishedAt": "2024-10-22",
+    "url": "https://gnews.gg.go.kr/briefing/brief_gongbo_view.do?BS_CODE=s017&number=63486",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "실증(PoC) 주요 성과 및 경기데이터 찾아드림 설명"
+  },
+  {
+    "id": "S27",
+    "title": "춘천시 의료·요양 통합돌봄",
+    "publisher": "춘천시 복지포털",
+    "publishedAt": "미확인",
+    "url": "https://www.chuncheon.go.kr/new-welfare/life/senior/care-delivery-system/",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "제공 서비스 표 / 스마트 돌봄 / AI케어콜"
+  },
+  {
+    "id": "S28",
+    "title": "제321회 제1차 복지환경위원회 회의록",
+    "publisher": "춘천시의회",
+    "publishedAt": "2022-10-26",
+    "url": "https://kms.chuncheon.go.kr/minutes/svc/web/cms/mnts/SvcMntsViewer.php?schSn=3919",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "복지정책과장의 AI케어콜 시범사업 시행 답변"
+  },
+  {
+    "id": "S29",
+    "title": "2026 고독사 예방 안부살핌 서비스 신청 안내",
+    "publisher": "남양주시 통합사례관리팀",
+    "publishedAt": "2026-05-11",
+    "url": "https://www.nyj.go.kr/www/selectBbsNttView.do?bbsNo=62&key=2481&nttNo=541668",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "지원내용 및 신청방법"
+  },
+  {
+    "id": "S30",
+    "title": "AI 기술 적용한 순천 케어콜 사업, 왕조1동 응급환자 생명 구해",
+    "publisher": "순천시 왕조1동",
+    "publishedAt": "2024-08-07",
+    "url": "https://www.suncheon.go.kr/kr/news/0006/0001/?mode=view&seq=66421",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거",
+    "locator": "보도자료 검색 색인 본문"
+  },
+  {
+    "id": "S31",
+    "title": "제340회 기획행정위원회 제1차 회의록",
+    "publisher": "강원특별자치도의회",
+    "publishedAt": "2025-09-10",
+    "url": "https://council.gangwon.kr/viewer/minutes.do?mem_sch=all&schwrd=&uid=18309",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "원문 텍스트 확인",
+    "role": "개별 사례 근거",
+    "locator": "행정국장의 AI CCTV 시행 및 AI당직원 일정 지연 답변"
+  },
+  {
+    "id": "S32",
+    "title": "강원특별자치도, 전국 최초 대화 가능한 AI 당직원 도입",
+    "publisher": "강원특별자치도 지능정보정책과",
+    "publishedAt": "2025-08-12",
+    "url": "https://state.gwd.go.kr/portal/briefing/pressRelease?seq=6256",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "제목·게시일 확인·HWP 첨부 본문 미열람",
+    "role": "개별 사례 근거",
+    "locator": "보도자료 목록 및 게시물 메타데이터"
+  },
+  {
+    "id": "S33",
+    "title": "울산시, 올해 고래수 안정적 공급에 총력",
+    "publisher": "울산광역시 상수도사업본부",
+    "publishedAt": "2026-03-24",
+    "url": "https://www.ulsan.go.kr/u/rep/bbs/view.do?bbsId=BBS_0000000000000027&dataId=179841&mId=001004003001000000",
+    "checkedAt": "2026-10-17",
+    "accessStatus": "검색 색인 확인·원문 접속 실패",
+    "role": "개별 사례 근거",
+    "locator": "물동이 AI 챗봇 도입 항목"
+  }
+]
