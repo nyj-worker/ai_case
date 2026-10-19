@@ -1230,7 +1230,7 @@ export default function App() {
                         {msg.citations.map((c, cIdx) => (
                           <div key={cIdx} style={{ backgroundColor: '#FFFFFF', padding: 12, border: '1px solid var(--border-line)', borderRadius: 'var(--radius-sharp)', fontSize: 11 }}>
                             <div style={{ fontWeight: 700, color: 'var(--text-ink)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                              <span>[{c.case_id}] {c.title} ({c.region})</span>
+                              <span>{c.case_id ? `[${c.case_id}] ` : ''}{c.title}{c.region ? ` (${c.region})` : ''}</span>
                               <span className="badge-tag amber" style={{ fontSize: 10 }}>검증 근거</span>
                             </div>
                             {c.quote && (
@@ -1240,14 +1240,14 @@ export default function App() {
                             )}
                             <div style={{ marginTop: 6, paddingTop: 6, borderTop: '1px dashed var(--border-line)' }}>
                               <a
-                                href={c.source_url}
+                                href={c.source_url || c.url || '#'}
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="aesop-external-link"
                                 style={{ fontSize: 11 }}
-                                title={`${c.source_title} 공식 원문 새 창으로 열기`}
+                                title={`${c.source_title || c.title} 공식 원문 새 창으로 열기`}
                               >
-                                <span>공식 원문 바로가기: {c.source_title}</span>
+                                <span>공식 원문 바로가기: {c.source_title || c.title || '공식 문서 확인'}</span>
                                 <ExternalLink style={{ width: 11, height: 11 }} />
                               </a>
                             </div>
