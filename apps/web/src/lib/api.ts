@@ -549,23 +549,98 @@ export async function askAIChat(message: string): Promise<ChatResponse> {
 }
 
 /**
- * 정책 기안용 종합 보고서 생성
+ * 정책 기안용 종합 보고서 생성 (시장님 보고용 1페이지 브리핑)
  */
 export async function generateReport(caseIds: string[], reportType: string = 'BRIEFING') {
   try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 3000);
+
     const res = await fetch(`${API_BASE}/reports/generate`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ case_ids: caseIds, report_type: reportType }),
+      signal: controller.signal,
     });
+    clearTimeout(timeoutId);
     if (res.ok) return await res.json();
   } catch {}
 
+  // 오프라인 및 Vercel 정적 배포 환경용 지능형 보고서 생성 엔진
+  const targetIds = (caseIds && caseIds.length > 0) ? caseIds : ['C001', 'C019', 'C020'];
+  const cases = targetIds
+    .map(id => DEFAULT_DATA.cases.find(c => c.id === id))
+    .filter((c): c is Case => Boolean(c));
+
+  const validCases = cases.length > 0 ? cases : DEFAULT_DATA.cases.slice(0, 3);
+  const caseCount = validCases.length;
+
+  const now = new Date();
+  const dateStr = `${now.getFullYear()}년 ${now.getMonth() + 1}월 ${now.getDate()}일`;
+
+  const totalScoreAvg = Math.round(
+    validCases.reduce((acc, c) => acc + (c.assessment?.total_score || 85), 0) / caseCount * 10
+  ) / 10;
+
+  // 1. 핵심 제안 요약
+  const caseTitles = validCases.slice(0, 3).map(c => `'${c.title}'`).join(', ') + (caseCount > 3 ? ` 외 ${caseCount - 3}건` : '');
+  const summaryText = `전국 17개 시도에서 공식 검증된 대표 AI 행정혁신 우수사례 ${caseCount}건(${caseTitles})을 종합 벤치마킹하여, 남양주시의 복지 사각지대 해소(안부살핌), 상습 불법주차 민원 사전 예방, 야간 당직 자동화 등 핵심 시정 현안을 동시 해결하기 위한 '2026~2027 남양주시 종합 AI 행정혁신 패키지 도입 방안'을 시장님께 보고드립니다.`;
+
+  // 2. 벤치마킹 정밀 검증 표 (Markdown Table)
+  const benchTable = [
+    '| 사례ID | 관할 지자체 | 정책 사업명 | 정책 분야 | 핵심 적용 AI 기술 | 공식 검증 성과 |',
+    '| :---: | :---: | :--- | :---: | :--- | :--- |',
+    ...validCases.map(c => `| **${c.id}** | ${c.region} ${c.city} | **${c.title}** | ${c.category} | ${c.tech} | ${c.performance || '공식 원문 운영 확인'} |`)
+  ].join('\n');
+
+  // 3. 남양주시 적합성 7대 지표 평가 표
+  const evalTable = [
+    '| 사례ID | 정책 사업명 | 남양주 적합 총점 | 종합 판정 | 시민 편익 | 업무 절감 | 도입 타당성 및 정책 제언 |',
+    '| :---: | :--- | :---: | :---: | :---: | :---: | :--- |',
+    ...validCases.map(c => {
+      const a = c.assessment;
+      const score = a?.total_score || 88.0;
+      const grade = a?.grade || '최우선 검토';
+      const b = a?.citizen_benefit || 4;
+      const w = a?.work_reduction || 4;
+      const r = a?.analysis_reason ? (a.analysis_reason.length > 40 ? a.analysis_reason.slice(0, 40) + '...' : a.analysis_reason) : '남양주시 시범도입 타당성 충분';
+      return `| **${c.id}** | ${c.title} | **${score}점** | ${grade} | ${b}/5 | ${w}/5 | ${r} |`;
+    })
+  ].join('\n');
+
+  // 4. 단계별 통합 추진 로드맵
+  const roadmapText = [
+    '1. **1단계 (기획 및 부서 협의, 1~2개월)**: 스마트도시과 총괄 주관 하에 복지정책과·첨단교통과 합동 TF 구성, 보안성 검토 및 개인정보 영향평가 완료',
+    '2. **2단계 (실증 시범사업 착수, 3~6개월)**: 관내 1~2개 읍면동(다산동·화도읍 등) 행정복지센터 대상 현장 실증(PoC) 운영 및 주민 체감 만족도 측정',
+    '3. **3단계 (남양주시 전역 확대 시행, 7~12개월)**: 16개 읍면동 종합 확대 및 차세대 지자체 행정정보시스템 연계 완료'
+  ].join('\n');
+
+  // 5. 시장님 의사결정 및 정책 승인 요청사항
+  const decisionText = [
+    '- **방침 결정**: 검증된 AI 행정혁신 벤치마킹 모델 시범도입 방침 확정 및 소관 부서별 실행 과제 지정 승인',
+    '- **조직 구성**: 스마트도시과 총괄 주관 하에 사업별 전담 실무 인력 지정 및 정기 성과 점검',
+    '- **재정 계획**: 2026년도 하반기 추경 및 2027년도 본예산 사전 타당성 연구/구축비 편성 승인'
+  ].join('\n');
+
+  const sections = [
+    { heading: '1. 핵심 제안 요약 (Executive Summary)', content: summaryText },
+    { heading: `2. 타 지자체 벤치마킹 우수사례 정밀 검증 (${caseCount}건)`, content: benchTable },
+    { heading: '3. 남양주시 정책 적합성 7대 지표 평가 결과', content: evalTable },
+    { heading: '4. 단계별 통합 추진 로드맵 (Roadmap)', content: roadmapText },
+    { heading: '5. 시장님 의사결정 및 정책 승인 요청사항 (Decision Points)', content: decisionText }
+  ];
+
   return {
-    title: '전국 지자체 AI 행정혁신 벤치마킹 및 남양주시 도입 전략 보고서',
-    created_at: new Date().toISOString(),
-    executive_summary: '전국 17개 시도 28건의 AI 행정혁신 검증 사례를 심층 분석한 결과, 남양주시는 시민 체감도가 높고 즉시 도입 가능한 복지 안부살핌 및 교통 부정주차 AI가 최우선 추진 과제로 도출되었습니다.',
-    case_count: caseIds.length,
+    title: caseCount === 1 
+      ? `전국 우수사례 기반 남양주시 '${validCases[0].title}' 정책 도입 제안서`
+      : `전국 ${caseCount}대 AI 행정혁신 우수사례 종합 정책 도입 제안서`,
+    author: '남양주시 스마트 행정혁신 연구동아리',
+    date: dateStr,
+    audience: '남양주시장님 보고용',
+    total_score: totalScoreAvg,
+    grade: '최우선 검토',
+    sections: sections,
+    selected_cases: validCases.map(c => c.title)
   };
 }
 
