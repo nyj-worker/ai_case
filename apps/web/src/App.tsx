@@ -8,7 +8,7 @@ import React, { useState, useEffect } from 'react';
 import {
   Search, ShieldCheck, MapPin, Layers, Scale, Sparkles,
   Kanban, FileText, ExternalLink, RefreshCw, X, ChevronRight, BarChart3, Bookmark,
-  Send, Bot, Printer, Copy, Check, Download, RotateCcw, Plus
+  Send, Bot, Printer, Copy, Check, Download, RotateCcw, Plus, Menu
 } from 'lucide-react';
 import type { Case, DashboardStats, PolicyTask } from './types';
 import * as api from './lib/api';
@@ -17,6 +17,21 @@ import MarkdownRenderer from './components/MarkdownRenderer';
 export default function App() {
   // 현재 활성화된 탭
   const [activeTab, setActiveTab] = useState<'dashboard' | 'regions' | 'categories' | 'compare' | 'chat' | 'kanban' | 'reports'>('dashboard');
+
+  // 모바일 햄버거 드로어 메뉴 열림/닫힘 상태
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  // 모바일 메뉴 열림 시 뒷배경 스크롤 방지 처리
+  useEffect(() => {
+    if (isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+    return () => {
+      document.body.style.overflow = 'unset';
+    };
+  }, [isMobileMenuOpen]);
 
   // 데이터 상태
   const [stats, setStats] = useState<DashboardStats | null>(null);
@@ -401,7 +416,7 @@ export default function App() {
       <header className="main-header">
         <div className="header-inner">
           {/* 브랜드 워드마크 */}
-          <div className="brand-group" onClick={() => setActiveTab('dashboard')}>
+          <div className="brand-group" onClick={() => { setActiveTab('dashboard'); setIsMobileMenuOpen(false); }}>
             <span className="brand-wordmark">
               <span className="logo-dark">SAIP</span>
               <span className="logo-accent">LAB.</span>
@@ -413,8 +428,8 @@ export default function App() {
             </div>
           </div>
 
-          {/* 탭 네비게이션 */}
-          <nav className="nav-tabs">
+          {/* 데스크톱 전용 탭 네비게이션 (모바일에서는 숨김) */}
+          <nav className="nav-tabs desktop-only">
             {[
               { id: 'dashboard', label: '통합 대시보드', icon: BarChart3 },
               { id: 'regions', label: '17개 시도별 사례', icon: MapPin },
@@ -439,15 +454,117 @@ export default function App() {
             })}
           </nav>
 
-          {/* 우측 바로가기 액션 */}
-          <div>
+          {/* 데스크톱 우측 바로가기 액션 (모바일에서는 숨김) */}
+          <div className="desktop-only">
             <button onClick={() => setActiveTab('chat')} className="btn-ai-quick">
               <Sparkles style={{ width: 14, height: 14 }} />
               <span>AI 정책 자문</span>
             </button>
           </div>
+
+          {/* 모바일 전용 햄버거 메뉴 열기 버튼 */}
+          <button
+            type="button"
+            className="mobile-hamburger-btn mobile-only"
+            onClick={() => setIsMobileMenuOpen(true)}
+            aria-label="모바일 메뉴 열기"
+          >
+            <Menu style={{ width: 22, height: 22 }} />
+          </button>
         </div>
       </header>
+
+      {/* 모바일 햄버거 슬라이드 드로어 네비게이션 */}
+      {isMobileMenuOpen && (
+        <div
+          className="mobile-drawer-backdrop"
+          onClick={() => setIsMobileMenuOpen(false)}
+        >
+          <div
+            className="mobile-drawer-panel"
+            onClick={(e) => e.stopPropagation()}
+            role="dialog"
+            aria-modal="true"
+          >
+            {/* 드로어 상단 바 */}
+            <div className="drawer-header">
+              <div
+                className="drawer-brand"
+                onClick={() => {
+                  setActiveTab('dashboard');
+                  setIsMobileMenuOpen(false);
+                }}
+              >
+                <span className="brand-wordmark">
+                  <span className="logo-dark">SAIP</span>
+                  <span className="logo-accent">LAB.</span>
+                </span>
+                <span className="drawer-sub">정책연구 플랫폼</span>
+              </div>
+              <button
+                type="button"
+                className="drawer-close-btn"
+                onClick={() => setIsMobileMenuOpen(false)}
+                aria-label="메뉴 닫기"
+              >
+                <X style={{ width: 22, height: 22 }} />
+              </button>
+            </div>
+
+            {/* 드로어 메뉴 탭 리스트 */}
+            <div className="drawer-nav-list">
+              {[
+                { id: 'dashboard', label: '통합 대시보드', icon: BarChart3, desc: '전국 혁신사례 통계 및 종합 지표' },
+                { id: 'regions', label: '17개 시도별 사례', icon: MapPin, desc: '전국 17개 시도별 세부 추진 사례' },
+                { id: 'categories', label: '8대 정책분야', icon: Layers, desc: '복지·교통·당직·행정 등 분야별 탐색' },
+                { id: 'compare', label: '남양주 적합성 & 비교', icon: Scale, desc: '타 지자체 사례 다자간 비교평가' },
+                { id: 'chat', label: 'Grok RAG 챗봇', icon: Bot, desc: '실시간 AI 정책자문 및 기안문 다운로드' },
+                { id: 'kanban', label: '정책 실행 과제', icon: Kanban, desc: '남양주시 단계별 추진 칸반보드' },
+                { id: 'reports', label: '시장님 보고서', icon: FileText, desc: '시정 현안 1페이지 브리핑 생성' },
+              ].map(tab => {
+                const Icon = tab.icon;
+                const isActive = activeTab === tab.id;
+                return (
+                  <button
+                    key={tab.id}
+                    onClick={() => {
+                      setActiveTab(tab.id as any);
+                      setIsMobileMenuOpen(false);
+                    }}
+                    className={`drawer-tab-item ${isActive ? 'active' : ''}`}
+                  >
+                    <div className="drawer-tab-icon-wrap">
+                      <Icon style={{ width: 18, height: 18 }} />
+                    </div>
+                    <div className="drawer-tab-text">
+                      <span className="drawer-tab-label">{tab.label}</span>
+                      <span className="drawer-tab-desc">{tab.desc}</span>
+                    </div>
+                    <ChevronRight style={{ width: 16, height: 16, opacity: 0.35 }} />
+                  </button>
+                );
+              })}
+            </div>
+
+            {/* 드로어 하단 퀵 액션 */}
+            <div className="drawer-footer">
+              <button
+                onClick={() => {
+                  setActiveTab('chat');
+                  setIsMobileMenuOpen(false);
+                }}
+                className="drawer-ai-btn"
+              >
+                <Sparkles style={{ width: 16, height: 16 }} />
+                <span>AI 정책 자문 바로가기</span>
+              </button>
+              <div className="drawer-copyright">
+                남양주시 스마트 행정혁신 연구동아리 (v2.0)
+              </div>
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* 3. 메인 콘텐츠 영역 */}
       <main className="main-content">

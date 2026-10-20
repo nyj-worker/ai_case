@@ -1124,19 +1124,459 @@ a {
   gap: 4px;
 }
 
-/* 반응형 모바일 쿼리 */
-@media (max-width: 1100px) {
-  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
-  .dashboard-columns { grid-template-columns: 1fr; }
-  .cards-grid { grid-template-columns: repeat(2, 1fr); }
-  .kanban-grid { grid-template-columns: 1fr; }
+/* ==============================================================
+ * 모바일 햄버거 버튼 및 오프캔버스 드로어 네비게이션
+ * ============================================================== */
+
+/* 기본 가시성 제어 */
+.mobile-only {
+  display: none !important;
 }
 
-@media (max-width: 768px) {
-  .header-inner { flex-direction: column; height: auto; padding: 16px; }
-  .nav-tabs { flex-wrap: wrap; justify-content: center; }
-  .editorial-hero { flex-direction: column; padding: 24px; }
-  .kpi-grid { grid-template-columns: 1fr; }
-  .cards-grid { grid-template-columns: 1fr; }
-  .footer-inner { flex-direction: column; text-align: center; }
+.desktop-only {
+  display: flex !important;
 }
+
+/* 모바일 햄버거 토글 버튼 */
+.mobile-hamburger-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 42px;
+  height: 42px;
+  background-color: var(--bg-surface);
+  border: 1px solid var(--border-line);
+  border-radius: var(--radius-sharp);
+  color: var(--text-ink);
+  cursor: pointer;
+  transition: all 180ms ease;
+  box-shadow: var(--shadow-subtle);
+}
+
+.mobile-hamburger-btn:hover,
+.mobile-hamburger-btn:active {
+  background-color: var(--bg-tint-amber);
+  border-color: var(--primary-amber);
+  color: var(--primary-amber-active);
+}
+
+/* 드로어 백드롭 오버레이 */
+.mobile-drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background-color: rgba(35, 33, 30, 0.6);
+  backdrop-filter: blur(4px);
+  display: flex;
+  justify-content: flex-end;
+  animation: fadeIn 200ms ease;
+}
+
+/* 드로어 본체 패널 */
+.mobile-drawer-panel {
+  width: 86%;
+  max-width: 360px;
+  height: 100%;
+  background-color: var(--bg-surface);
+  box-shadow: -8px 0 32px rgba(35, 33, 30, 0.2);
+  display: flex;
+  flex-direction: column;
+  animation: slideDrawer 240ms cubic-bezier(0.16, 1, 0.3, 1);
+  border-left: 1px solid var(--border-strong);
+  overflow-y: auto;
+}
+
+@keyframes slideDrawer {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* 드로어 상단 헤더 */
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 20px;
+  border-bottom: 1px solid var(--border-line);
+  background-color: var(--bg-canvas);
+}
+
+.drawer-brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.drawer-sub {
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--primary-amber);
+  letter-spacing: 0.08em;
+}
+
+.drawer-close-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-sharp);
+  color: var(--text-taupe);
+  background-color: transparent;
+  transition: all 150ms ease;
+}
+
+.drawer-close-btn:hover {
+  background-color: var(--bg-subtle);
+  color: var(--text-ink);
+}
+
+/* 드로어 메뉴 리스트 */
+.drawer-nav-list {
+  flex: 1;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  overflow-y: auto;
+}
+
+.drawer-tab-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 14px 16px;
+  border-radius: var(--radius-sharp);
+  border: 1px solid transparent;
+  background-color: transparent;
+  text-align: left;
+  transition: all 180ms ease;
+  cursor: pointer;
+}
+
+.drawer-tab-item:hover {
+  background-color: var(--bg-tint-amber);
+  border-color: var(--border-line);
+}
+
+.drawer-tab-item.active {
+  background-color: rgba(166, 119, 59, 0.1);
+  border-color: var(--primary-amber);
+}
+
+.drawer-tab-icon-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: var(--radius-sharp);
+  background-color: var(--bg-canvas);
+  color: var(--text-taupe);
+  flex-shrink: 0;
+  border: 1px solid var(--border-line);
+}
+
+.drawer-tab-item.active .drawer-tab-icon-wrap {
+  background-color: var(--primary-amber);
+  color: #FFFFFF;
+  border-color: var(--primary-amber-hover);
+}
+
+.drawer-tab-text {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.drawer-tab-label {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text-ink);
+}
+
+.drawer-tab-item.active .drawer-tab-label {
+  color: var(--primary-amber-hover);
+}
+
+.drawer-tab-desc {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+/* 드로어 하단 푸터 */
+.drawer-footer {
+  padding: 16px 18px 24px;
+  border-top: 1px solid var(--border-line);
+  background-color: var(--bg-canvas);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.drawer-ai-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 13px 18px;
+  background-color: var(--primary-amber);
+  color: #FFFFFF;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border-radius: var(--radius-sharp);
+  border: 1px solid var(--primary-amber-hover);
+  box-shadow: 0 2px 6px rgba(166, 119, 59, 0.25);
+  cursor: pointer;
+  transition: all 180ms ease;
+}
+
+.drawer-ai-btn:hover {
+  background-color: var(--primary-amber-hover);
+}
+
+.drawer-copyright {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ==============================================================
+ * 전면 반응형 미디어 쿼리 (Responsive Breakpoints)
+ * ============================================================== */
+
+/* 1. 태블릿 가로 및 중간 크기 화면 (1100px 이하) */
+@media (max-width: 1100px) {
+  .kpi-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+  .dashboard-columns {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .cards-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+  }
+  .kanban-grid {
+    grid-template-columns: 1fr;
+  }
+  .header-inner {
+    padding: 0 24px;
+  }
+}
+
+/* 2. 모바일 및 태블릿 세로 화면 (900px 이하) - 햄버거 메뉴 본격 전환 */
+@media (max-width: 900px) {
+  /* 데스크톱 전용 네비게이션 숨김 */
+  .desktop-only {
+    display: none !important;
+  }
+
+  /* 모바일 햄버거 버튼 활성화 */
+  .mobile-only {
+    display: inline-flex !important;
+  }
+
+  /* 헤더 레이아웃 최적화: 높이 축소 및 좌우 정렬 유지 */
+  .main-header {
+    height: 64px;
+  }
+
+  .header-inner {
+    height: 64px;
+    padding: 0 16px;
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+
+  /* 브랜드 로고 컴팩트화 */
+  .brand-group {
+    gap: 12px;
+  }
+
+  .brand-wordmark {
+    font-size: 22px;
+  }
+
+  .brand-title {
+    font-size: 13px;
+  }
+
+  .brand-subtitle {
+    font-size: 9px;
+  }
+
+  .brand-separator {
+    height: 22px;
+  }
+
+  /* 본문 영역 패딩 축소 */
+  .main-content {
+    padding: 24px 16px 64px;
+  }
+
+  /* 이솝 에디토리얼 히어로 최적화 */
+  .editorial-hero {
+    flex-direction: column;
+    padding: 28px 20px;
+    margin-bottom: 24px;
+    gap: 20px;
+  }
+
+  .hero-title {
+    font-size: 25px;
+    line-height: 1.35;
+    margin-bottom: 12px;
+  }
+
+  .hero-description {
+    font-size: 13.5px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    width: 100%;
+    justify-content: center;
+    padding: 13px 18px;
+    font-size: 13px;
+  }
+
+  /* 툴바 및 검색 필터 반응형 */
+  .toolbar-container {
+    padding: 14px;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+
+  .search-input-wrap {
+    min-width: 100%;
+    width: 100%;
+  }
+
+  .select-filter {
+    width: 100%;
+    min-width: 100%;
+  }
+
+  .view-toggle-group {
+    width: 100%;
+  }
+
+  .view-toggle-btn {
+    flex: 1;
+    text-align: center;
+    padding: 9px 0;
+  }
+
+  /* 시도 칩 스크롤 */
+  .chips-wrap {
+    overflow-x: auto;
+    flex-wrap: nowrap;
+    padding-bottom: 8px;
+    gap: 6px;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .chip-btn {
+    white-space: nowrap;
+    flex-shrink: 0;
+  }
+
+  /* 모달 윈도우 반응형 */
+  .modal-overlay {
+    padding: 12px;
+  }
+
+  .modal-window {
+    padding: 24px 18px;
+    max-height: 94vh;
+    border-radius: var(--radius-sharp);
+  }
+
+  .modal-title {
+    font-size: 20px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    text-align: center;
+    gap: 14px;
+    padding: 0 16px;
+  }
+}
+
+/* 3. 스마트폰 화면 (640px 이하) */
+@media (max-width: 640px) {
+  .kpi-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+
+  .cards-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .case-card {
+    padding: 20px 18px;
+  }
+
+  .case-title {
+    font-size: 16px;
+  }
+
+  .kpi-number {
+    font-size: 32px;
+  }
+
+  .editorial-hero {
+    padding: 22px 16px;
+  }
+
+  .hero-title {
+    font-size: 22px;
+  }
+}
+
+/* 4. 소형 스마트폰 화면 (420px 이하) */
+@media (max-width: 420px) {
+  .brand-title-wrap .brand-subtitle {
+    display: none;
+  }
+
+  .brand-title {
+    font-size: 12px;
+  }
+
+  .brand-wordmark {
+    font-size: 20px;
+  }
+
+  .mobile-drawer-panel {
+    width: 90%;
+  }
+}
+
